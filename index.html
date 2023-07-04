@@ -1,926 +1,211 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>记录，从此刻开始</title><meta name="author" content="ALL IN"><meta name="copyright" content="ALL IN"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="人无完人">
+<meta property="og:type" content="website">
+<meta property="og:title" content="记录，从此刻开始">
+<meta property="og:url" content="https://gitee.com/all_in_space/index.html">
+<meta property="og:site_name" content="记录，从此刻开始">
+<meta property="og:description" content="人无完人">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:author" content="ALL IN">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/blog/img/favicon.png"><link rel="canonical" href="https://gitee.com/all_in_space/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/blog/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/blog/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '记录，从此刻开始',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-07-04 11:06:41'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
   
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
   
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
-
-  
-  
-<link rel="stylesheet" href="/css/style.css">
-
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-
-  
-  
-<meta name="generator" content="Hexo 6.3.0"></head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
         
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-        
-          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
-        
-        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-hexo使用" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/07/04/hexo%E4%BD%BF%E7%94%A8/" class="article-date">
-  <time class="dt-published" datetime="2023-07-04T02:44:30.000Z" itemprop="datePublished">2023-07-04</time>
-</a>
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
     
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/07/04/hexo%E4%BD%BF%E7%94%A8/">hexo使用</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>以下命令均是在<code>hexo</code> 博客所在文件夹的根目录打开 <code>GitBash</code>输入</p>
-<p>1、启动</p>
-<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br><span class="line">#ctrl+c 停止</span><br></pre></td></tr></table></figure>
-
-<p>2、新建博客文章</p>
-<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;标题&quot;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">lijunwei@lijunwei MINGW64 /e/projects_data/myself/blog</span><br><span class="line">$ hexo new &quot;hexo使用&quot;</span><br><span class="line">INFO  Validating config</span><br><span class="line">INFO  Created: E:\projects_data\myself\blog\source\_posts\hexo使用.<span class="built_in">md</span></span><br></pre></td></tr></table></figure>
-
-<p>执行完新建文章命令后，查看其地址并用 typora 打开编辑；输入内容后保存，再次运行博客，在浏览器刷新查看</p>
-<p>3、清除博客缓存</p>
-<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#一般在切换博客主题，或者博客效果与预期不一致时执行该命令</span><br><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
-
-<p>4、将 <code>md</code> 文件生成静态页面</p>
-<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#一般在使用 hexo clean 命令后使用</span><br><span class="line">hexo g</span><br></pre></td></tr></table></figure>
-
-
-
-<p>hexo博客编写</p>
-<p>1、写博客</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">执行 hexo <span class="keyword">new</span> “名字”，hexo 创建该 md 文件，使用 typora 编辑并保存</span><br></pre></td></tr></table></figure>
-
-<p>2、清缓存&amp;更新渲染</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">执行hexo clean清除缓存，</span><br><span class="line"></span><br><span class="line">随后执行hexo g重新渲染静态页面</span><br></pre></td></tr></table></figure>
-
-<p>3、推送到码云</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">执行hexo d</span><br></pre></td></tr></table></figure>
-
-<p>4、更新码云的静态页面</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/07/04/hexo%E4%BD%BF%E7%94%A8/" data-id="cljnotv8z0003c8pfcwf320y2" data-title="hexo使用" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo%E4%BD%BF%E7%94%A8/" rel="tag">hexo使用</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-ORACLE笔记" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/07/04/ORACLE%E7%AC%94%E8%AE%B0/" class="article-date">
-  <time class="dt-published" datetime="2023-07-04T02:42:55.000Z" itemprop="datePublished">2023-07-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/07/04/ORACLE%E7%AC%94%E8%AE%B0/">ORACLE笔记</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>在线练习： <a target="_blank" rel="noopener" href="http://sqlfiddle.com/#!4/b78fd2/5">http://sqlfiddle.com/#!4/b78fd2/5</a></p>
-<p>1、自定义函数</p>
-<p>&#x2F;**<br>📔创建函数<br>*&#x2F;</p>
-<p>create or replace function 函数名(参数1 模式 数据类型,……) return 数据类型<br>as<br>  – 定义局部变量。<br>  变量1 数据类型;<br>  ……<br>begin<br>  – 实现函数功能的PL&#x2F;SQL代码。<br>  ……<br>  exception<br>  – 异常处理的PL&#x2F;SQL代码。<br>  ……<br>end;<br>&#x2F;</p>
-<hr>
-<p>1）参数的模式有三种：</p>
-<p>in：只读模式，在函数中，参数只能被引用&#x2F;读取，不能改变它的值。</p>
-<p>out：只写模式，参数只能被赋值，不能被引用&#x2F;读取。</p>
-<p>in out：可读可写。</p>
-<p>参数的模式可以不写，缺省为in，out和in out两种模式极少使用。</p>
-<p>2）as&#x2F;is二选一，在这里没有区别。</p>
-<p>3）可以不定义局部变量。</p>
-<p>4）可以没有异常（exception）处理代码段。</p>
-<p>示例，创建自定义函数maxvalue，用于比较两个数字的大小，返回较大值：</p>
-<p>create or replace function maxvalue(val1 number,val2 number) return number<br>as<br>  val number;   – 定义局部变量，存放返回值。<br>begin<br>  if (val1&gt;val2) then    – 判断传入参数的大小。<br>      val:&#x3D;val1;         – 赋值是”:&#x3D;”，不是”&#x3D;”。<br>  else<br>      val:&#x3D;val2;<br>  end if;</p>
-<p>  return val;  – 返回<br>end;<br>&#x2F;</p>
-<hr>
-<p>&#x2F;**<br>📔调用函数<br>*&#x2F;</p>
-<p>select maxvalue(1,2) from dual;</p>
-<hr>
-<h2 id="如果maxvalue函数是用scott用户创建的，其它用户调用时需要加scott用户名前缀，并且具备相应的权限，否则会出现“ORA-00904-”MAXVALUE”-标识符无效”的错误。"><a href="#如果maxvalue函数是用scott用户创建的，其它用户调用时需要加scott用户名前缀，并且具备相应的权限，否则会出现“ORA-00904-”MAXVALUE”-标识符无效”的错误。" class="headerlink" title="如果maxvalue函数是用scott用户创建的，其它用户调用时需要加scott用户名前缀，并且具备相应的权限，否则会出现“ORA-00904:”MAXVALUE”: 标识符无效”的错误。"></a>如果maxvalue函数是用scott用户创建的，其它用户调用时需要加scott用户名前缀，并且具备相应的权限，否则会出现“ORA-00904:”MAXVALUE”: 标识符无效”的错误。</h2><p>&#x2F;**<br>📔数据装载<br>*&#x2F;</p>
-<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/superSmart_Dong/article/details/107522558">https://blog.csdn.net/superSmart_Dong/article/details/107522558</a></p>
-<p>&#x2F;**<br>📔查询表的字段名及注释 start<br>*&#x2F;</p>
-<p>select COLUMN_NAME,COMMENTS<br>from user_col_comments<br>where TABLE_NAME &#x3D; UPPER(‘表名’);</p>
-<p>&#x2F;**<br>查询表的字段名及注释 end<br>*&#x2F;</p>
-<p>&#x2F;**<br>*存储过程<br>*&#x2F;<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_39443053/article/details/104044530">https://blog.csdn.net/qq_39443053/article/details/104044530</a></p>
-<p>&#x2F;**</p>
-<ul>
-<li>字符串切割成结果集两种方法</li>
-<li>start<br>*&#x2F;</li>
-</ul>
-<p>Oracle 10G 以上版本才支持SYS.ODCIVARCHAR2LIST</p>
-<p>SELECT COLUMN_VALUE  FROM TABLE(SYS.ODCIVARCHAR2LIST(‘C110001’,’C110002’,’C110003’,’C110004’));</p>
-<p>所以在9I版本中可以通过创建一个TYPE来使用该功能：</p>
-<p>CREATE OR REPLACE TYPE MY_ODCIVARCHAR2LIST AS VARRAY(32767) OF VARCHAR2(4000);<br>SELECT COLUMN_VALUE  FROM TABLE(MY_ODCIVARCHAR2LIST(‘1’,’2’,’3’,’4’,’5’));</p>
-<p>select regexp_substr(‘1,2,3’,’[^,]+’, 1, level, ‘i’) as id_arr from dual connect by level &lt;&#x3D; length(‘1,2,3’)-length(regexp_replace(‘1,2,3’, ‘,’, ‘’))+1;</p>
-<p>&#x2F;**</p>
-<ul>
-<li>字符串切割成结果集两种方法</li>
-<li>end<br>*&#x2F;</li>
-</ul>
-<p>&#x2F;**<br>*连续with tab as<br>*&#x2F;<br>WITH unit1 AS (<br>        SELECT ORGIDT, CURCDE, p.bal AS bal<br>        FROM (<br>            SELECT CURCDE AS CURCDE, ORGIDT AS ORGIDT<br>                , SUM(nvl(LSDBAL, 0)) AS bal<br>            FROM TA_IND_APCCDE_HIS<br>            WHERE APCCDE IN (‘7013’)<br>                AND CENDAT &#x3D; 20180101<br>            GROUP BY ORGIDT, CURCDE<br>        ) p<br>    ),<br>    unit2 AS (<br>        SELECT ORGIDT, CURCDE, p.bal AS bal<br>        FROM (<br>            SELECT CURCDE AS CURCDE, ORGIDT AS ORGIDT<br>                , SUM(nvl(LSCBAL, 0)) AS bal<br>            FROM TA_IND_APCCDE_HIS<br>            WHERE APCCDE IN (‘8091’)<br>                AND CENDAT &#x3D; 20180101<br>                AND ORGIDT &#x3D; ‘00029’<br>            GROUP BY ORGIDT, CURCDE<br>        ) p<br>    ),<br>    all_value AS (<br>        SELECT ORGIDT, CURCDE, nvl(unit1, 0) AS unit1<br>            , nvl(unit2, 0) AS unit2<br>        FROM (<br>            SELECT coalesce(unit1.ORGIDT, unit2.ORGIDT) AS ORGIDT<br>                , coalesce(unit1.CURCDE, unit2.CURCDE) AS CURCDE, unit1.bal AS unit1<br>                , unit2.bal AS unit2<br>            FROM unit1<br>                FULL JOIN unit2 ON unit1.CURCDE &#x3D; unit2.CURCDE<br>        ) t<br>    )<br>SELECT ‘D’ AS value_code, ORGIDT, CURCDE<br>    , round(unit1 &#x2F; unit2, 3) AS ind_value<br>FROM all_value<br>WHERE unit2 &lt;&gt; 0</p>
-<p>&#x2F;**<br>*查询表字段和注释<br>*&#x2F;<br>SELECT<br>  a.TABLE_NAME tb_name,<br>  a.COLUMN_NAME col_name,<br>  b.COMMENTS AS  COMMIT<br>FROM user_tab_columns a<br>LEFT JOIN user_col_comments b ON a.TABLE_NAME &#x3D; b.TABLE_NAME AND a.COLUMN_NAME &#x3D; b.COLUMN_NAME<br>WHERE a.TABLE_NAME &#x3D; ‘TA_GDP_PBC_DLT_DG’ –表名<br>ORDER BY a.COLUMN_ID </p>
-<p>&#x2F;**</p>
-<ul>
-<li>包含<br>*&#x2F;</li>
-</ul>
-<p>select * from students where instr(address, ‘beijing’) &gt; 0</p>
-<p>&#x2F;**<br>*赋权<br>**&#x2F;</p>
-<p>grant select on TABLE to USER； &#x2F;&#x2F;读权限</p>
-<p>&#x2F;**<br>*oracle导出dmp文件<br>**&#x2F;<br>exp c##jfms&#x2F;<a href="mailto:&#106;&#102;&#x6d;&#x73;&#x40;&#49;&#57;&#50;&#46;&#49;&#x36;&#x38;&#x2e;&#49;&#x2e;&#50;&#x30;&#x31;">&#106;&#102;&#x6d;&#x73;&#x40;&#49;&#57;&#50;&#46;&#49;&#x36;&#x38;&#x2e;&#49;&#x2e;&#50;&#x30;&#x31;</a>&#x2F;orcl file&#x3D;&#x2F;home&#x2F;oracle&#x2F;export&#x2F;srms_ind.dmp tables&#x3D;C##SRMS.TA_SRMS_MODEL_CLASS query&#x3D;&quot; where INDCODE like &#39;R%&#39; &quot;</p>
-<p>&#x2F;**</p>
-<ul>
-<li>oracle<br>*&#x2F;</li>
-</ul>
-<pre><code class="调整数据文件大小">    
-    ALTER DATABASE DATAFILE &#39;D:\ORADATA\TEST.DBF&#39; RESIZE 4200M;、
-    具体讲解参考 https://blog.csdn.net/fffygapl/article/details/7470744
-
-~~~物理表空间增加数据文件
-    ALTER TABLESPACE app_data ADD DATAFILE  
-    &#39;D:\ORACLE\PRODUCT\10.2.0\ORADATA\EDWTEST\APP03.DBF&#39; SIZE 50M 
-    AUTOEXTEND ON NEXT 5M MAXSIZE 100M;  -- 允许数据文件自动增长 （可选）
-    其他相关可参考： https://blog.csdn.net/naruto0025/article/details/78622374
-
-~~~数据库用户创建及删除
-    创建用户
-    1.用登录到DBA权限，输入sqlplus / as sysdba回车，相当于拥有数据库操作的最高权限，其中/表示不用用户名和密码。
-    2.创建用户的指令为:create user shqx identified by “pwdidc”;，其中shqx是需要自己起的用户名，pwdidc是该用户名的密码。
-    3.经过以上两个步骤已经创建用户了，但是该用户还不能用，还需要DBA给该用户授予相应的权限才可以。
-    4.授予相应的权限，常见的权限有:session(对话)，table(表)，tablespace(表空间)，view(视图)。
-    grant create session to shqx;
-    grant create table to shqx;
-    grant create tablespace to shqx;
-    grant create view to shqx;
-    注:shqx是自己取得用户名；
-
-    删除
-    删除用户有两种方法，第一种方法是:先将该用户中的所有表都先删除，然后再删除用户。第二种方法是:直接将该用户和所有表全部删除，一步到位。这两种方法都必须是DBA权限才可以删除，因此需要获取DBA权限，sqlplus / as sysdba即可
-    1.第一种方法
-    drop table shqx.tt;
-    drop user shqx;
-    2.第二种方法
-    drop user shqx cascade;
-
-
-~~~数据库用户分配权限和回收权限
-
-    分配
-    grant select on tablename to c##test;//授予c##test用户查看指定表的权限 
-    grant drop on tablename to c##test;//授予删除表的权限 
-    grant insert on tablename to c##test;//授予插入的权限 
-    grant update on tablename to c##test;//授予修改表的权限 
-    grant insert(id) on tablename to c##test; 
-    grant update(id) on tablename to c##test;//授予对指定表特定字段的插入和修改权限，注意，只能是insert和update 
-    grant alert all table to c##test;//授予c##test用户alert任意表的权限
-
-    回收
-    revoke create session from c##test;//移除c##test用户创建session的权限
-    revoke unlimited session from c##test;//移除c##test用户使用表空间的权限
-    revoke create table from c##test;//移除创建表的权限
-    revoke drop table from c##test;//移除删除表的权限
-    revoke insert table from c##test;//移除插入表的权限
-    revoke update table from c##test;//移除修改表的权限
-    revoke all from public;//移除所有用户(public)所有权限(all) 
-    等等···和授予权限语法基本都是一样的，除了关键字
-
-    查看权限
-    select * from user_sys_privs;//查看当前用户所有权限 
-    select * from user_tab_privs;//查看所用用户对表的权限 
-    select * from user_sys_privs;//查看当前用户所有权限 
-    select * from user_tab_privs;//查看所用用户对表的权限 
-
-    角色
-    create role myrole;//创建角色 
-    grant create session to myrole;//将创建session的权限授予myrole 
-    grant myrole to c##test;//授予c##test用户myrole的角色 
-    drop role myrole;删除角色 
-    /*但是有些权限是不能授予给角色的，比如unlimited tablespace和any关键字*/
-
-~~~同义词创建
-      1、首先是：用sys账号给DM账号赋予CREATE SYNONYM的权限
-       GRANT CREATE SYNONYM TO user_temp;  -- user_temp是你要建同义词的用户。
-
-        这个时候你创建同义词的时候，如果找不到你要管理的user_res用户下的表tableA。（注：要在user_temp用户下创建user_res用户下tableA表的同义词）， 这个时候还需要一个权限就是user_temp用户select tableA的权限，这个时候是在user_res用户下赋值的
-
-        grant select on tableA to user_temp;  
-     2、这样就可以在user_temp用户下创建同义词了
-    -- Create the synonym   
-    create or replace synonym tableA  for user_res.tableA;
-
-
-    3、删除同义词
-    drop public synonym table_name;
-
-    4、查看所有同义词
-    select * from dba_synonyms
-    
-~~~DBLINK创建及删除
-
-        --查看当前用户是否有创建dblink权限
-        select * from user_sys_privs t where t.privilege like upper(&#39;%link%&#39;);
-        --赋予“创建DBLink”的权限（前提：使用管理员账号登录系统system/admin）
-        grant create public database link,drop public database link to scott;
-        --或直接赋予“DBA”角色
-        grant dba to scott;
-
-        1、查询DBLINK信息
-        select * from dba_db_links;
-        select owner,object_name from dba_objects where object_type=&#39;DATABASE LINK&#39;;
-        select * from ALL_DB_LINKS;
-      
-        注：Oracle创建dblink报错:ORA-01017、ORA-02063解决：根据ORA-01017的提示是连接到另一方的用户密码错误，当9i或10g的版本的Oracle数据库连接11g的版本时，会自动将密码转化为大写。**密码最好用双引号引起来，否则可能在连接的时候报错
-
-        2、创建
-
-        create database link dblink名   -- 链的名称（我们可以自定义）
-        connect to 数据库用户名 identified by &quot;数据库密码&quot;  -- 要连接的数据库的用户名密码
-        using &#39;(DESCRIPTION =(ADDRESS_LIST =(ADDRESS =(PROTOCOL = TCP)(HOST = 192.168.0.1)(PORT = 1521)))(CONNECT_DATA =(SERVICE_NAME = orcl)))&#39;;  
-
-        -- 如果创建全局 dblink，必须使用 systm 或 sys 用户，在 database 前加 public。  
-        create public database link dblink名 connect to 数据库用户名 identified by &quot;数据库密码&quot;
-　　      using &#39;(DESCRIPTION =(ADDRESS_LIST =(ADDRESS =(PROTOCOL = TCP)(HOST = 192.168.0.1)(PORT = 1521)))(CONNECT_DATA =(SERVICE_NAME = orcl)))&#39;;  
-
-        3、删除
-
-        DROP DATABASE LINK [name];   --或   DROP PUBLIC DATABASE LINK [name];  
-
-        4、如何使用DBLINK？
-
-        select * from PHY_EQP_UNIT@ossbc_dev_sz; 
-
-        解释：FROM后跟表名，@链名称
-
-~~~日期处理函数
-
-    1、add_months(date，int)：输入date数据和需要增加的月份数（整数），返回增加若干月份数后date数据
-        -- 加一个月后的日期
-        SELECT ADD_MONTHS(SYSDATE, 1) FROM dual;
-        -- 扩展
-        -- 求当年的天数：增加12月后再取年份相减
-        SELECT ADD_MONTHS(TRUNC(SYSDATE, &#39;YYYY&#39;), 12) - TRUNC(SYSDATE, &#39;YYYY&#39;) days FROM dual;
-
-    2、last_day(date):返回当前日期在该月份的最后一天的日期
-
-    SELECT LAST_DAY(SYSDATE) from dual;
-    -- 假设今天为2021-04-21，那么执行返回的时间日期为2021-04-30
-
-    3、months_between(date1，date2)：返回两个日期的月份差，存在小数。
-    
-    -- 返回值刚好为1，因为都是两个月份的02相减。
-    -- 提示：如果不相等则有很多小数。这时候使用floor进行向下取整或round进行向上取整
-    SELECT MONTHS_BETWEEN(to_date(&#39;2021-05-02&#39;,&#39;yyyy-mm-dd&#39;), to_date(&#39;2021-04-02&#39;,&#39;yyyy-mm-dd&#39;)) as month from dual;
-
-    更多用法参考： https://blog.csdn.net/good_good_xiu/article/details/115877301
-
-~~~字符串处理函数
-
-    1、字符大小写转换函数
-        UPPER：字符全部转成大写
-        LOWER：字符全部转成小写
-        INITCAP：字符首字母大写
-
-    2、截掉  去除空白及字符串函数 TRIM,LTRIM,RTRIM**
-
-        TRIM：默认截掉字符两侧的空白
-
-        trim([trim_str from] x)：截取最左边或者最右边的单个指定字符 select TRIM(&#39;T&#39; from &#39;TONY&#39;) from dual;   --示例结果  ONY
-
-        LTRIM(X[,TRIM_STR])：截掉字符串X左边的TRIM_STR（指定截取）字符（可一次性截取多个连续字符）；
-
-        RTRIM(X[,TRIM_STR])：截掉字符串X右边的TRIM_STR（指定截取）字符。（可一次性截取多个连续字符）
-
-    3、截取
-    substr(str, start_position, length)：根据字符长度来获取字符串（常用）
-        str：需要进行截取操作的字符串 、 start_position：从字符串的第几位开始截取 （从1开始计数，负值表示从右侧开始）、 length：截取的长度
-    substrb：根据字节长度来取字符串： select substrb(&#39;我很好看&#39;,1,6) from dual  --- 我很
-
-    4、长度
-    length：显示的是字符串的字符长度；
-    lengthb：显示的是字符串的字节长度；
-
-    5、查找
-    instr(原字符串，要查询的字符或者字符串)； -- 返回第1个目标字符从左往右的所在位置
-    instr(原字符串，要查询的字符或者字符串，起始位置，匹配序号)
-
-    6、填充
-    lpad(需要填充的字符串,填充后的字符长度,填充字符串)：向字符左边填充字符串
-    rpad(需要填充的字符串,填充后的字符长度,填充字符串)：向字符右边填充字符串
-    
-    7、替换
-    replace(字符串,要被替换的字符，替换字符)
-    regexp_replace(字符串,要被替换的字符，替换字符)  -- 功能与replace相似，但支持正则表达式
-    translate(字符串，要被替换的字符，替换字符)  --替换字符要与被替换的字符长度一致，多出来的字符将不会被替换进去
-
-    8、提取日期及获取时间差
-
-    select sysdate
-         ,extract(year from sysdate) as year  --提取年
-        ,extract(month from sysdate) as month--提取月
-        ,extract(day from sysdate) as day    --提取日
-        ,extract(hour from t1 ) as hour      --提取时
-         ,extract(minute from t1 ) as minute  --提取分
-         ,extract(second from t1 ) as second  --提取秒
-         ,extract(day from t2 -t1) as day_diff --日期差
-         ,extract(hour from t2 -t1) as hour_diff --小时差
-        from 
-            (select to_timestamp(&#39;20200102 10:15:03&#39;,&#39;yyyymmdd hh24:mi:ss&#39;) t1
-                     ,to_timestamp(&#39;20200105 17:23:08&#39;,&#39;yyyymmdd hh24:mi:ss&#39;) t2 from dual) t
-
-
-~~~聚合函数
-    具体包括：count、sum、avg、max、min、stddev --统计数据标准差、variance --统计数据方差
-          --只有count函数会把空值一并统计，除此以外的其他聚合函数都不会对空值进行统计
-
-~~~触发器开发
-
-    触发器(trigger)设置某个条件,如果SQL语句执行了该条件则触发某个或者某些固定的SQL，对数据表进行DML语句操作(insert、update、delete)时所触发的触发器
-        
-        1、DML行级触发器
-
-        
-        create or replace trigger modify_stu  --定义行级触发器modify_stu  
-        after insert or delete or update of stu_name  ------insert update delete 条件
-        on CSDN_STUDENT  --目标表
-        for each row  ---for each row 表示行级触发器
-          begin 
-            if inserting then
-            dbms_output.put_line(&#39;insert&#39;);
-            insert into CSDN_STU_LOG values(1,&#39;insert&#39;,sysdate,:new.stu_name);
-            elsif deleting then
-            insert into CSDN_STU_LOG values(2,&#39;delete&#39;,sysdate,:old.stu_name);
-                dbms_output.put_line(&#39;delete&#39;);
-            elsif updating then
-                insert into CSDN_STU_LOG values(3,&#39;update_old&#39;,sysdate,:old.stu_name);
-                insert into CSDN_STU_LOG values(4,&#39;update_new&#39;,sysdate,:new.stu_name);
-             end if;
-        end;
-
-
-        
-        ----:new 引用插入操作的某列值,如 :new.stu_name
-        ----.:old 引用删除操作的某列值,如 :old.stu_name
-        ----CSDN_STUDENT 关联的表
-        ----update of stu_name 对应:new.stu_name和:old.stu_name人名
-        ----如果不想显示人名或者其他信息将第二行和带:new和:old的改成字符&#39;XXX&#39;
-        ------after insert or delete or update
-        ------示例 insert into CSDN_STU_LOG values(1,&#39;insert&#39;,sysdate,&#39;XXX&#39;);
-
-    2、DML表级触发器
-    ----表级触发器不加 for each row
-        create or replace trigger modify_stus
-        before insert or update or delete on CSDN_STUDENT
-        begin
-           if deleting then
-             raise_application_error(-20001,&#39;该表不允许删除数据&#39;);
-           elsif updating then
-             raise_application_error(-20002,&#39;该表不允许修改数据&#39;);
-            elsif inserting then
-             raise_application_error(-20003,&#39;该表不允许插入数据&#39;);
-            end if;
-        end;
-
-    3、禁止删除表触发器特殊形况下使用可以提高安全性
-    ----关键字drop 也可以替换成别的
-        CREATE OR REPLACE TRIGGER CSDN_ddl_deny_lee
-        BEFORE  drop OR truncate on database    
-        begin
-            raise_application_error(num =&gt; -20000,msg =&gt; &#39;主机:&#39; || SYS_CONTEXT(&#39;USERENV&#39;, &#39;HOST&#39;)||chr(13) || &#39;IP:&#39; ||SYS_CONTEXT(&#39;USERENV&#39;, &#39;IP_ADDRESS&#39;)||&#39;试图删     除&#39; || ora_dict_obj_name() || &#39;表&#39;);
-        end;
-
-~~~SQL执行计划分析 （https://blog.csdn.net/qq_34745941/article/details/106068346）
-
-        1、找出执行语句的 ‘sql_id’
-        select t.*
-        from v$sql t
-        where t.sql_text like &#39;%where t.empno &gt;= 7782%&#39; --执行的 sql 语句
-        order by t.last_active_time desc;
-
-        2、根据 ‘sql_id’ 查出 ‘真实执行计划（最近一条）’
-
-        select * from table(dbms_xplan.display_cursor(&#39;92dkjj0sw6wjr&#39;,null,&#39;allstats last&#39;));
-
-        参数说明：
-            Starts      该 sql 执行的次数
-            E-Rows      预计返回的行数
-            A-Rows      实际返回的行数。可以和 E-Rows 比对，确定哪一步出现了问题
-            A-Time      每一步实际执行的时间
-            Buffers     每一步实际执行的逻辑读或一致性读
-            Reads       每一步实际执行的物理读
-            Writes      每一步实际执行的物理写
-            OMem        最优执行模式所需的内存评估值
-            1Mem        one-pass模式所需的内存评估值
-            Used_Mem    则为当前操作实际执行时消耗的内存
-            括号里面为(发生磁盘交换的次数,1次即为One-Pass,大于1次则为Multi_Pass,如果没有使用磁盘，则显示0)
-
-~~~数据库等待事件
-    
-    select t2.sid, t2.SERIAL#, -- 库级唯一定位一个session
-         t1.SPID OS_PID,     -- 操作系统的PID
-        t3.SQL_ID, t2.EVENT,-- SQLID和等待事件
-         t2.P1TEXT, t2.P1,   -- 等待事件的P1信息
-        t2.p2TEXT, t2.P2,   -- 等待事件的P2信息
-        t2.p3TEXT, t2.P3,   -- 等待事件的P3信息
-         t3.SQL_FULLTEXT     -- 被执行的SQL完整内容
-    from v$process t1, v$session t2, v$sql t3
-    where t1.ADDR = t2.PADDR
-    and t2.STATUS = &#39;ACTIVE&#39;
-    -- 表示当前正在执行SQL的会话
-    -- and t2.STATUS = &#39;INACTIVE&#39;
-    -- 表示当前等待执行SQL的会话
-    -- and t2.STATUS = &#39;KILLED&#39;
-    -- 表示当前会话正在被杀掉，未提交事务强制回滚
-       and t2.SQL_ID = t3.SQL_ID;
-    -- t2.sid, t2.SERIAL#      可以用作库级杀死会话：alter system kill session &#39;t2.sid, t2.SERIAL#&#39;;
-    -- t1.SPID OS_PID          可以用作系统级杀死会话：kill -9 t1.SPID
-    -- t2.EVENT 和 P1、P2、P3  不同的等待事件的P1、P2和P3的信息是不尽相同的，具体要查官档
-    -- t3.SQL_FULLTEXT         是一个CLOB类型的字段
-
-    ##去掉注释
-    select t2.sid, t2.SERIAL#, t1.SPID OS_PID,
-           t3.SQL_ID, t2.EVENT,
-           t2.P1TEXT, t2.P1, t2.p2TEXT, t2.P2,
-           t2.p3TEXT, t2.P3, t3.SQL_FULLTEXT
-      from v$process t1, v$session t2, v$sql t3
-     where t1.ADDR = t2.PADDR
-       and t2.STATUS = &#39;ACTIVE&#39; -- &#39;INACTIVE&#39;
-       and t2.SQL_ID = t3.SQL_ID;
-
-~~~HINT优化（https://blog.csdn.net/onianshao/article/details/70140860）
-        
-    Oracle Hints是一种机制，用来告诉优化器按照我们的告诉它的方式生成执行计划
-
-~~~索引优化    （https://www.cnblogs.com/tianmingt/articles/4444885.html）
-
-
-~~~外部表创建及删除
-
-create or replace directory ext_data_dir as &#39;d:\software\oracle11\ext\data&#39;;
-create or replace directory ext_log_dir as &#39;d:\software\oracle11\ext\log&#39;;
-create or replace directory ext_bad_dir as &#39;d:\software\oracle11\ext\bad&#39;;
-
-grant read on directory ext_data_dir to oe;  --对存放数据的目录要有读的权限
-grant read,write on directory ext_log_dir to oe; -- 授予用户oe 有读写的权限  对存放日志文件的目录要有写的权限
-grant read,write on directory ext_bad_dir to oe;  -- 对存放坏文件的目录要有写的权限
-
-drop table  ext_student;
-create table ext_student(
-id varchar2(4),
-name varchar2(20),
-major varchar2(15),
-score number
-)
-organization external   --表示创建的是外部表
-(
-type ORACLE_LOADER   --指定访问的驱动是oracle_loader
-default directory ext_data_dir  --指定数据的默认存放路径
-location (&#39;example.dat&#39;)   --指定存放数据文件的名字
-access parameters(
-records delimited by newline   --一行为一条记录
-badfile ext_bad_dir :&#39;example%a_%p.bad&#39;  --指定坏文件的名字及路径 
-logfile ext_log_dir :&#39;example%a_%p.log&#39;  -- 指定日志文件的名字及路径
-fields terminated by &#39;,&#39;    --指定字段间 以&#39;,&#39; 进行分隔
-missing field values are null  
-(id,name,major,score) )
-)
-parallel
-reject limit unlimited; --表示允许无限制的行发生错误
-
-
-~~~分区表
-
-create table test_part
-(
-   ID NUMBER(20) not null,
-   REMARK VARCHAR2(1000),
-   create_time DATE
-)
-PARTITION BY RANGE (CREATE_TIME) INTERVAL (numtoyminterval(1, &#39;year&#39;)) --按年创建分区表
-PARTITION BY RANGE (CREATE_TIME) INTERVAL (numtoyminterval(1, &#39;month&#39;)) --按月创建分区表
-PARTITION BY RANGE (CREATE_TIME) INTERVAL (NUMTODSINTERVAL(1, &#39;day&#39;))  --按天创建分区表
-PARTITION BY RANGE (CREATE_TIME) INTERVAL (NUMTODSINTERVAL (7, &#39;day&#39;)) --按周创建分区表
-(partition part_t01 values less than(to_date(&#39;2018-11-01&#39;, &#39;yyyy-mm-dd&#39;))); -- 默认分区 表示小于 2018-11-01 的都放在 part_t01 分区表中。
-
-~~~主键创建及删除
-
-①建表时添加主键
-CREATE TABLE table_test(
-id INT NOT NULL,       --注意：主键必须非空
-name VARCHAR(20) NOT NULL,
-address VARCHAR(20),
-constraint 主键名 PRIMARY KEY(id)  --主键 无&#123;constraint 主键名&#125;创建一个没有名字的主键
-);
-
-主键名：PK_表名
-
-②建表后添加主键
-alter table 表名 add constraint 主键名 primary key(主键1，主键2);  -- 无&#123;constraint 主键名&#125;创建一个没有名字的主键
-删除有名字的主键
-ALTER TABLE table_test DROP CONSTRAINT 主键名;
-删除没有名字的主键
-先查询出来主键名， 再删除
-SELECT t.* from user_cons_columns t where t.table_name  = &#39;表名&#39; and t.position is not null;   --表名必须大写，如：TABLE_TEST
-
-
-~~~索引创建及删除
-
-1、创建普通索引
-create index index_name on table(column_name);
-
-2、创建唯一索引
-create unique index index_name on table(column_name);
-
-3、创建组合索引
-create index index_name on table(column_name1,column_name2);
-
-4、删除索引
-drop index index_name;
-
-5、查询索引
-
---根据索引名，查询表索引字段（索引名需大写）
-
-select * from user_ind_columns where index_name=&#39;索引名&#39;;
-
---根据表名，查询一张表的索引（表名需要大写）
-
-select * from user_indexes where table_name=&#39;表名&#39;;
-
-
-~~~序列创建及删除
-
-create sequence student_id
-minvalue 1  --最小值
-nomaxvalue  --不设置最大值(由机器决定)，或 根据表字段的值范围设置 maxvalue
-maxvalue 999  -- 最大值
-start with 1   --从1开始计数，数值可变
-increment by 1  --每次加1，数值可变
-nocycle  --一直累加，不循环；cycle：达到最大值后，将从头开始累加
-nocache；  --不建缓冲区。   如果建立cache那么系统将自动读取cache值个seq，这样会加快运行速度；如果在单机中使用cache，或者oracle死了，那么下次读取的seq值将不连贯，所以不建议使用cache。
-
- drop sequence student_id；删除
-
-~~~目录创建及删除   
-
-1、查询directory目录  select * from dba_directories;
-
-2、创建或者修改 directory目录 create or replace directory dum_date_dir as  &#39;/home/oracle/datatmp&#39; 
-
-3、赋权 directory目录 grant read,write on directory dumpdir to username;
-
-4、删除directory目录 drop directory DIRENAME;
-
-~~~物理表空间创建及删除
-
-create tablespace test datafile &#39;D:\Database\data\test_data.dbf&#39; size 20M 
-autoextend 
-on next 5M
-maxsize 500M;
-
-create temproary tablespace test tempfile &#39;D:\Database\data\test_data.dbf&#39; size 20M 
-autoextend 
-on next 5M
-maxsize 500M;
-
---删除空的表空间，但是不包含物理文件
-drop tablespace tablespace_name;
---删除非空表空间，但是不包含物理文件
-drop tablespace tablespace_name including contents;
---删除空表空间，包含物理文件
-drop tablespace tablespace_name including datafiles;
---删除非空表空间，包含物理文件
-drop tablespace tablespace_name including contents and datafiles;
-
-
-
-~~~日志打印
-
-DBMS_OUTPUT.put_line(v_object.object_name);
-
-
-~~~排名
-
-不连续排名rank()
-
-连续排名dense_rank()
-
-
-
-
-~~~窗口函数（https://www.cnblogs.com/hider/p/11678804.html）
-
-over()的作用就是告诉SQL引擎：按区域对数据进行分区，然后累计每个切片的总额，再全部展示。
-
-over函数指明在那些字段上做分析，其内跟Partition by表示对数据进行分组。注意Partition by可以有多个字段。
-
-over函数可以和其它聚集函数、分析函数搭配，起到不同的作用。例如sum，还有诸如rank，dense_rank, min, max等
-
-    1、使用partition by子句可以进行分组操作，类似于group by，需要与over()搭配使用。
-
-    select shopname,
-       sales,
-       date2,
-       avg(sales) over(partition by shopname)
-    from temp_cwh_window;
-
-~~~行列转换 （https://www.cnblogs.com/shenjie0622/p/10008715.html）
-
-create table temp_cwh_window
-(
-  shopname varchar(10),
-  sales number,
-  opt int,
-  act varchar(10)
-);
--- 插入数据
-insert into temp_cwh_window values(&#39;淘宝&#39;,&#39;50&#39;,1, &#39;A&#39;);
-insert into temp_cwh_window values(&#39;淘宝&#39;,&#39;35&#39;,2,&#39;A&#39;);
-insert into temp_cwh_window values(&#39;淘宝&#39;,&#39;63&#39;,3, &#39;A&#39;);
-insert into temp_cwh_window values(&#39;淘宝&#39;,&#39;63&#39;,4, &#39;A&#39;);
-insert into temp_cwh_window values(&#39;天猫&#39;,&#39;15&#39;,1, &#39;A&#39;);
-insert into temp_cwh_window values(&#39;天猫&#39;,&#39;59&#39;,2, &#39;A&#39;);
-insert into temp_cwh_window values(&#39;天猫&#39;,&#39;63&#39;,3, &#39;A&#39;);
-insert into temp_cwh_window values(&#39;京东&#39;,&#39;159&#39;,1, &#39;A&#39;);
-insert into temp_cwh_window values(&#39;京东&#39;,&#39;32&#39;,2, &#39;A&#39;);
-insert into temp_cwh_window values(&#39;京东&#39;,&#39;59&#39;,3, &#39;A&#39;);
-insert into temp_cwh_window values(&#39;淘宝&#39;,&#39;150&#39;,1, &#39;B&#39;);
-insert into temp_cwh_window values(&#39;淘宝&#39;,&#39;135&#39;,2,&#39;B&#39;);
-insert into temp_cwh_window values(&#39;淘宝&#39;,&#39;163&#39;,3, &#39;B&#39;);
-insert into temp_cwh_window values(&#39;天猫&#39;,&#39;115&#39;,1, &#39;B&#39;);
-insert into temp_cwh_window values(&#39;天猫&#39;,&#39;159&#39;,2, &#39;B&#39;);
-insert into temp_cwh_window values(&#39;天猫&#39;,&#39;163&#39;,3, &#39;B&#39;);
-insert into temp_cwh_window values(&#39;京东&#39;,&#39;1159&#39;,1, &#39;B&#39;);
-insert into temp_cwh_window values(&#39;京东&#39;,&#39;132&#39;,2, &#39;B&#39;);
-insert into temp_cwh_window values(&#39;京东&#39;,&#39;159&#39;,3, &#39;B&#39;);
-
-== 示例
-select *
- from (select 
-           shopname,
-           act,
-           sales,
-           opt
-        from temp_cwh_window) t
-           pivot(max(sales) for opt in (1 day_value,2 mon_value,3 year_value));
-</code></pre>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/07/04/ORACLE%E7%AC%94%E8%AE%B0/" data-id="cljnotv8q0000c8pf52ntfchz" data-title="ORACLE笔记" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ORACLE/" rel="tag">ORACLE</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/07/04/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2023-07-04T02:41:49.998Z" itemprop="datePublished">2023-07-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/07/04/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/07/04/hello-world/" data-id="cljnotv8v0001c8pff5u236cy" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/ORACLE/" rel="tag">ORACLE</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo%E4%BD%BF%E7%94%A8/" rel="tag">hexo使用</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/ORACLE/" style="font-size: 10px;">ORACLE</a> <a href="/tags/hexo%E4%BD%BF%E7%94%A8/" style="font-size: 10px;">hexo使用</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/07/">July 2023</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2023/07/04/hexo%E4%BD%BF%E7%94%A8/">hexo使用</a>
-          </li>
-        
-          <li>
-            <a href="/2023/07/04/ORACLE%E7%AC%94%E8%AE%B0/">ORACLE笔记</a>
-          </li>
-        
-          <li>
-            <a href="/2023/07/04/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2023 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.6.4.min.js"></script>
-
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
-</body>
-</html>
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/blog/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/blog/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/blog/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/blog/" title="记录，从此刻开始"><span class="site-name">记录，从此刻开始</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">记录，从此刻开始</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/blog/2023/07/04/hexo%E4%BD%BF%E7%94%A8/" title="hexo使用">hexo使用</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-07-04T02:44:30.000Z" title="发表于 2023-07-04 10:44:30">2023-07-04</time></span></div><div class="content">以下命令均是在hexo 博客所在文件夹的根目录打开 GitBash输入
+1、启动
+12hexo s#ctrl+c 停止
+
+2、新建博客文章
+1hexo new &quot;标题&quot;
+
+1234lijunwei@lijunwei MINGW64 /e/projects_data/myself/blog$ hexo new &quot;hexo使用&quot;INFO  Validating configINFO  Created: E:\projects_data\myself\blog\source\_posts\hexo使用.md
+
+执行完新建文章命令后，查看其地址并用 typora 打开编辑；输入内容后保存，再次运行博客，在浏览器刷新查看
+3、清除博客缓存
+12#一般在切换博客主题，或者博客效果与预期不一致时执行该命令hexo clean
+
+4、将 md 文件生成静态页面
+12#一般在使用 hexo clean 命令后使用hexo g
+
+
+
+hexo博客编写
+1、写博客
+1执行 hexo new “名字”，hexo 创建该 md 文件，使用 typora 编辑并保存
+
+2、 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/blog/2023/07/04/ORACLE%E7%AC%94%E8%AE%B0/" title="ORACLE笔记">ORACLE笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-07-04T02:42:55.000Z" title="发表于 2023-07-04 10:42:55">2023-07-04</time></span></div><div class="content">在线练习： http://sqlfiddle.com/#!4/b78fd2/5
+1、自定义函数
+&#x2F;**📔创建函数*&#x2F;
+create or replace function 函数名(参数1 模式 数据类型,……) return 数据类型as  – 定义局部变量。  变量1 数据类型;  ……begin  – 实现函数功能的PL&#x2F;SQL代码。  ……  exception  – 异常处理的PL&#x2F;SQL代码。  ……end;&#x2F;
+
+1）参数的模式有三种：
+in：只读模式，在函数中，参数只能被引用&#x2F;读取，不能改变它的值。
+out：只写模式，参数只能被赋值，不能被引用&#x2F;读取。
+in out：可读可写。
+参数的模式可以不写，缺省为in，out和in out两种模式极少使用。
+2）as&#x2F;is二选一，在这里没有区别。
+3）可以不定义局部变量。
+4）可以没有异常（exception）处理代码段。
+示例，创建自定义函数maxvalue，用于比较两个数字的大小，返回较大值：
+create or replace function  ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/blog/2023/07/04/hello-world/" title="Hello World">Hello World</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-07-04T02:41:49.998Z" title="发表于 2023-07-04 10:41:49">2023-07-04</time></span></div><div class="content">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;
+
+More info: Writing
+Run server1$ hexo server
+
+More info: Server
+Generate static files1$ hexo generate
+
+More info: Generating
+Deploy to remote sites1$ hexo deploy
+
+More info: Deployment
+</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/blog/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">ALL IN</div><div class="author-info__description">人无完人</div></div><div class="card-info-data site-data is-center"><a href="/blog/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/blog/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/blog/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/blog/2023/07/04/hexo%E4%BD%BF%E7%94%A8/" title="hexo使用">hexo使用</a><time datetime="2023-07-04T02:44:30.000Z" title="发表于 2023-07-04 10:44:30">2023-07-04</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/blog/2023/07/04/ORACLE%E7%AC%94%E8%AE%B0/" title="ORACLE笔记">ORACLE笔记</a><time datetime="2023-07-04T02:42:55.000Z" title="发表于 2023-07-04 10:42:55">2023-07-04</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/blog/2023/07/04/hello-world/" title="Hello World">Hello World</a><time datetime="2023-07-04T02:41:49.998Z" title="发表于 2023-07-04 10:41:49">2023-07-04</time></div></div></div></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/blog/tags/ORACLE/" style="font-size: 1.1em; color: #999">ORACLE</a> <a href="/blog/tags/hexo%E4%BD%BF%E7%94%A8/" style="font-size: 1.1em; color: #999">hexo使用</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/blog/archives/2023/07/"><span class="card-archive-list-date">七月 2023</span><span class="card-archive-list-count">3</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">3</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-07-04T03:06:41.074Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By ALL IN</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/blog/js/utils.js"></script><script src="/blog/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
